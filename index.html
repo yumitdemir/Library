@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+    
+</head>
+<body>
+<div class="header">
+    <h2>Personal Library App</h2>
+    
+    <div class="add-button">
+        <button id="open">+ Add book</button>     
+    </div>
+    </div>
+</div>
+
+
+
+<div id="main">
+    
+    
+</div>
+
+
+<div id="container">
+    <div class="modal">
+        <div class="header">
+            <h1 id="modal-title">
+                Add new book
+            </h1>
+            <button id="close">x</button>
+        </div>
+        <div class="modal-body">
+            <form id="bookform">
+                <input type="text" id="title" name="title" placeholder="Title" required><br>
+                <input type="text" id="author" name="author" placeholder="Author" required><br>
+                <input type="number" id="page" name="page" placeholder="Pages" min="1"  required><br>
+                <label for="read"> Have you read it?</label>
+                <input type="checkbox" id="read" name="read" ><br>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+              
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

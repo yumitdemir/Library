@@ -1,0 +1,215 @@
+body{
+    margin: 0;
+    background-color: rgb(246, 239, 239);
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    font-size: 30px;
+    
+}
+h2{
+    color: rgb(76, 52, 107);
+}
+
+.add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+
+}
+
+
+#main{
+    margin: 0px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+
+.book-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.3); 
+
+
+    opacity: 0; 
+    pointer-events: none; 
+
+
+    transition: opacity 0.3s ease; 
+}
+
+.modal{
+    background-color: rgb(104, 51, 156);
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(224, 215, 233);
+}
+
+.modal-body{
+    text-align: center;
+    color: rgb(224, 215, 233);
+}
+
+#container.show{ /*! ---*/
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+#modal-title{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+#close{
+    background-color: rgb(104, 51, 156);
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    color: rgb(224, 215, 233);
+}
+
+.remove{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: 0;
+    
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    
+}
+.remove:hover{
+    background-color: white;
+    color: black;
+    border:2px solid black;
+}
+
+.removed{
+    display: none;
+}
+
+.read{
+    background-color: rgb(40, 193, 37);
+    border: 0;
+    
+    padding: 5px;
+    margin-bottom:10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+.read:hover{
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+}
+
+
+.not-read{
+    background-color: rgb(193, 37, 37);
+    border: 0;
+    
+    padding: 5px;
+    margin-bottom:10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.not-read:hover{
+    background-color: white;
+    border: 2px red solid;
+}
+
+
+
+#open{
+    cursor: pointer;
+    border: 0;
+    background-color: none;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgb(226, 218, 235);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgb(180, 131, 240);
+    color: rgb(102, 51, 153);
+}
+
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    margin: 7px;
+    border: 1px solid rgb(184, 170, 198);
+    border-radius: 10px;
+    padding: 10px;
+
+}
